@@ -1,0 +1,33 @@
+{
+    "target": "kasli",
+    "min_artiq_version": "6.0",
+    "variant": "sampler_urukul_phaser",
+    "hw_rev": "v2.0",
+    "base": "standalone",
+    "core_addr": "10.137.3.2",
+    "peripherals": [
+        {
+            "type": "sampler",
+            "ports": [
+                1,
+                2
+            ]
+        },
+        {
+            "type": "urukul",
+            "hw_rev": "v1.3",
+            "dds": "ad9910",
+            "ports": [
+                3,
+                4
+            ],
+            "clk_sel": 0,
+            "refclk": 100000000,
+            "proto_rev": 8
+        },
+        {
+            "type": "phaser",
+            "ports": [5]
+        }
+    ]
+}
